@@ -17,6 +17,7 @@ public class Match {
             System.out.println("Первая команда :" + c1 + " " + "очков");
             System.out.println("Вторая команда :" + c2 + " " + "очков");
         }
-
+        Data currentDate = new Date();
+        System.out.println(currentDate);
     }
 }
