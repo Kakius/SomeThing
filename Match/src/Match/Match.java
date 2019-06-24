@@ -10,14 +10,25 @@ public class Match {
         int c1 = 0;
         int c2 = 0;
         while (true){
-            int x = Integer.parseInt(reader.readLine());
+          int x = Integer.parseInt(reader.readLine());
             int y = Integer.parseInt(reader.readLine());
             if (x > 0) c1 = c1 + x;
             if (y > 0) c2 = c2 + y;
             System.out.println("Первая команда :" + c1 + " " + "очков");
             System.out.println("Вторая команда :" + c2 + " " + "очков");
+
+            System.out.println();
+
+            if (c1 >= 100 && c1 > c2) System.out.println("Победила первая команда команда со счетом: " + c1);
+            if (c2 >= 100 && c2 > c1) System.out.println("Победила вторая команда команда со счетом: " + c2);
+
+
+            System.out.println();
+
+            Date currentDate = new Date();
+            System.out.println(currentDate);
+
+            System.out.println();
         }
-        Data currentDate = new Date();
-        System.out.println(currentDate);
     }
 }
