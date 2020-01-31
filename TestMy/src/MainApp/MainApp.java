@@ -6,6 +6,7 @@
 package MainApp;
 
 import frames.LengthText;
+import frames.MainWindow;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -15,7 +16,6 @@ import java.util.Map;
  */
 public class MainApp
 {
-    
 
     /**
      * @param args the command line arguments
@@ -26,9 +26,9 @@ public class MainApp
         {
             public void run()
             {
-                new LengthText().setVisible(true);
+                new MainWindow().setVisible(true);
             }
         });
     }
-    
+
 }
